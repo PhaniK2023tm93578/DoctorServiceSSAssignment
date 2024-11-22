@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  doctor-service:
+    build:
+      context: .
+    env_file:
+      - .env
+    ports:
+      - 3001:3001
+    container_name: doctor-service
